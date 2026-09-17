@@ -1,0 +1,21 @@
+female (norah).
+female (ieda).
+female (sarah).
+female (nouf).
+female (jana).
+male (hasan).
+male (fahad).
+
+parent (norah, ieda). 
+parent (norah, nouf). 
+parent (ieda, sarah). 
+parent (ieda, fahad). 
+parent (hasan, fahad). 
+parent (hasan, sarah). 
+parent (nouf, jana). 
+
+mother (X, Y) :- female(X),  parent(X, Y) .
+father (X, Y) :- male (X),  parent(X, Y) .
+sister (X, Y) :- female(X),  parent(P, X),  parent (P, Y), X \= Y.
+brother (X, Y) :- male(X), parent (P, X),  parent (P, Y), X \= Y.
+

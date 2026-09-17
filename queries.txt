@@ -1,0 +1,23 @@
+parent(norah, ieda).
+true.
+parent(hasan, fahad).
+true.
+mother(norah, nouf).
+true.
+mother(nouf, jana).
+true.
+father(hasan, fahad).
+true.
+sister(sarah, fahad).
+true 
+brother(sarah, fahad).
+false.
+mother(sarah, jana).
+false.
+father(fahad, norah).
+false.
+brother(fahad, sarah).
+true 
+sister(sarah, jana).
+false
+
